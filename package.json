@@ -14,12 +14,16 @@
     "docker:deploy-local": "graph deploy graphprotocol/ens --debug --ipfs http://ens-app_ipfs_1:5001 --node http://ens-app_graph-node_1:8020/ --version-label 0.0.1",
     "docker:remove-local": "graph remove graphprotocol/ens --node http://ens-app_graph-node_1:8020",
     "build": "graph build",
-    "deploy": "graph deploy ensdomains/ens --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "create": "graph create Tomochain-Name-Service/tomons-subgraph --node http://graph.tomons.site:8020/",
+    "deploy": "graph deploy Tomochain-Name-Service/tomons-subgraph --ipfs http://ipfs.tomons.site:5001/ --node http://graph.tomons.site:8020/",
     "watch-local": "graph deploy graphprotocol/ens --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },
   "devDependencies": {
     "@ensdomains/content-hash": "^2.5.3",
     "@graphprotocol/graph-cli": "^0.23.2",
     "@graphprotocol/graph-ts": "^0.23.1"
+  },
+  "dependencies": {
+    "graph": "^0.2.0"
   }
 }

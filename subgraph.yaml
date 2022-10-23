@@ -8,11 +8,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ENSRegistry
-    network: mainnet
+    network: testnet
     source:
-      address: "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e"
+      address: "0x7861158d69B3591Dd89EB603352c99aA1B18b815"
       abi: EnsRegistry
-      startBlock: 9380380
+      startBlock: 26201389
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -36,11 +36,11 @@ dataSources:
           handler: handleNewTTL
   - kind: ethereum/contract
     name: ENSRegistryOld
-    network: mainnet
+    network: testnet
     source:
-      address: "0x314159265dd8dbb310642f98f50c066173c1259b"
+      address: "0x7861158d69B3591Dd89EB603352c99aA1B18b815"
       abi: EnsRegistry
-      startBlock: 3327417
+      startBlock: 26201389
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -64,7 +64,7 @@ dataSources:
           handler: handleNewTTLOldRegistry
   - kind: ethereum/contract
     name: Resolver
-    network: mainnet
+    network: testnet
     source:
       abi: Resolver
     mapping:
@@ -112,11 +112,11 @@ dataSources:
           handler: handleVersionChanged
   - kind: ethereum/contract
     name: BaseRegistrar
-    network: mainnet
+    network: testnet
     source:
-      address: "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85"
+      address: "0xf70A84256EDb4e96Fb29E63fA815E1Ad15C1CF9c"
       abi: BaseRegistrar
-      startBlock: 9380410
+      startBlock: 26234507
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -139,11 +139,11 @@ dataSources:
           handler: handleNameTransferred
   - kind: ethereum/contract
     name: EthRegistrarControllerOld
-    network: mainnet
+    network: testnet
     source:
-      address: "0x283Af0B28c62C092C9727F1Ee09c02CA627EB7F5"
+      address: "0xda1bdb6D970C29aB3a7dA9373AA0378BA8FA5300"
       abi: EthRegistrarControllerOld
-      startBlock: 9380471
+      startBlock: 26234682
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -163,7 +163,7 @@ dataSources:
           handler: handleNameRenewedByController
   - kind: ethereum/contract
     name: EthRegistrarController
-    network: mainnet
+    network: testnet
     source:
       abi: EthRegistrarController
     mapping:
@@ -185,7 +185,7 @@ dataSources:
           handler: handleNameRenewedByController
   - kind: ethereum/contract
     name: NameWrapper
-    network: mainnet
+    network: testnet
     source:
       abi: NameWrapper
     mapping:
